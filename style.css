@@ -54,7 +54,6 @@ body {
     transform: translate(-50%, -50%);
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     display: none;
-    transition: 0.9s ease-in;
 }
 
 .pop-up img {
@@ -140,4 +139,65 @@ body {
     text-align: center;
     margin-top: 20px;
     visibility: hidden;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:750px) {
+    .pop-up {
+        max-width: 500px;
+        height: 450px;
+    }
+    .pop-up-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe-input {
+        max-width: 250px;
+        height: 40px;
+    }
+    .subscribe-btn {
+        max-width: 120px;
+        height: 40px;
+    }
+    .pop-up-text h1 {
+        font-size: 35px;
+    }
+    .pop-up-text p {
+        font-size: 16px;
+    }
+    .main-container {
+        max-width: 400px;
+        height: 250px;
+    }
+}
+
+@media (max-width:550px){
+    .pop-up {
+        max-width: 400px;
+        height: 450px;
+    }
+    .subscribe-input {
+        max-width: 200px;
+        height: 40px;
+    }
+    .subscribe-btn {
+        max-width: 100px;
+        height: 40px;
+    }
+    .pop-up-text h1 {
+        font-size: 30px;
+    }
+    .pop-up-text p {
+        font-size: 12px;
+    }
+    .main-container {
+        max-width: 300px;
+        height: 250px;
+    }
 }
