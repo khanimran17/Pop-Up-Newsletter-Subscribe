@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #decdac;
+    font-family: 'Heebo', sans-serif;
+}
+
+.main-container {
+    width: 500px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #fefaf3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    /* z-index: 5; */
+}
+
+.get-news-letter-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Heebo', sans-serif;
+    background-color: #ebbf53;
+    color: white;
+}
+
+.get-news-letter-btn:hover {
+    background-color: #ecb426;
+    transition: 0.3s ease-in;
+}
+
+.pop-up {
+    width: 700px;
+    height: 350px;
+    border-radius: 40px;
+    background-color: #fefaf3;
+    font-family: 'Inika', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: 0.9s ease-in;
+}
+
+.pop-up img {
+    width: 213px;
+    height: 218px;
+    position: relative;
+    top: -30px;
+    left: 30px;
+}
+
+.pop-up-content {
+    display: flex;
+}
+
+.pop-up-text h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.pop-up-text p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pop-up-text {
+    margin: auto;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.subscribe-input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #afa187;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 15px;
+    background-color: #eee8dd;
+    border-right: none;
+}
+
+.subscribe-input::placeholder {
+    padding-left: 20px;
+}
+
+.subscribe-btn:hover {
+    background-color: #ecb426;
+}
+
+.subscribe-btn {
+    width: 150px;
+    height: 40px;
+    background-color: #ebbf53;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #afa187;
+    font-size: 15px;
+    border-left: none;
+}
+
+.close-pop-up {
+    position: relative;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 23px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.alert {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    visibility: hidden;
+}
